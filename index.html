@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Callum Innes — Software &amp; Games Developer</title>
+  <meta name="description" content="Portfolio of Callum Innes — games and software development projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <a href="#" class="logo">CI<span class="logo-dot">.</span></a>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#software">Software</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/Laffey16" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="kicker">Portfolio · 2026</p>
+    <h1>
+      Callum Innes.<br />
+      <span class="hero-accent">Building games &amp; software</span><br />
+      <span class="hero-muted">from Scotland.</span>
+    </h1>
+    <p class="hero-sub">
+      I make things in Unity, C++, C#, and whatever else the problem calls for.
+      Currently looking for graduate roles in games or software engineering.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#games">See the work</a>
+      <a class="btn btn-ghost" href="mailto:callinnes@proton.me">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section id="games" class="section">
+    <header class="section-header">
+      <span class="section-num">01</span>
+      <h2>Game Development</h2>
+      <p>University and personal projects across Unity, multiplayer systems, and gameplay programming.</p>
+    </header>
+
+    <div class="project-grid">
+
+      <article class="project featured">
+        <div class="project-media">
+
+          <img src="assets/placeholder-game1.png" alt="Screenshot of [Game Name]" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">Unity · C# · Multiplayer</p>
+          <h3>N/A</h3>
+          <p>N/A</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            <a href="#" target="_blank" rel="noopener">Play / Demo →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/placeholder-game2.png" alt="Screenshot of Pokemon-style project" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">Unity · C#</p>
+          <h3>Pokémon-style RPG</h3>
+          <p>"Recreation of Pokémon-style gameplay in Unity to learn turn-based combat systems, tile-based movement, and
+            state machines.
+            Uses original Pokémon Platinum assets — built as a learning exercise, not for distribution."</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/placeholder-game3.png" alt="Screenshot of Unity .Net Sockets Implementation" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">Unity · 3D · Networking</p>
+          <h3>[Unity .NET Sockets Implementation]</h3>
+          <p>Implementation of a client-server networking game using Unity and .NET Sockets to create a multiplayer game
+            when clients go around collecting coins and this data is sent to a central server.
+            Working off of a custom-built C# server, this project taught me about low-level networking concepts like TCP
+            and UDP,
+            serialization, and latency compensation.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SOFTWARE ============ -->
+  <section id="software" class="section section-alt">
+    <header class="section-header">
+      <span class="section-num">02</span>
+      <h2>Software Development</h2>
+      <p>Non-games projects — emulators, bots, mobile apps, systems.</p>
+    </header>
+
+    <div class="project-grid">
+
+      <article class="project featured">
+        <div class="project-media">
+          <img src="assets/placeholder-chip8.png" alt="CHIP-8 emulator running Tetris" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">C++ · Emulation · Systems</p>
+          <h3>CHIP-8 Emulator</h3>
+          <p>A working CHIP-8 emulator written from scratch in C++. Implements the full opcode set, display, input, and
+            timers.</p>
+          <p>Writing this taught me how CPUs actually fetch-decode-execute instructions, how memory maps work, and how
+            to debug at the opcode level.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/placeholder-bot.png" alt="Discord anime bot screenshot" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">Python · Discord API</p>
+          <h3>Discord Anime Bot</h3>
+          <p>Short description.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/placeholder-anime-app.png" alt="Anime app screenshot" />
+        </div>
+        <div class="project-body">
+          <p class="project-tags">Android · Kotlin / Java</p>
+          <h3>Anime App</h3>
+          <p>Short description.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about">
+    <header class="section-header">
+      <span class="section-num">03</span>
+      <h2>About</h2>
+    </header>
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm a Games Application Developer graduate from Abertay based in Scotland, focused on
+          games programming and software engineering. I like low-level work — emulators,
+          engines, tools — and gameplay systems.
+        </p>
+        <p>
+          Outside of programming, 2D platformers (Hollow Knight is a forever favourite), anime, and manga are all things
+          I love.
+          A lot of my side projects end up at the intersection of those interests.
+        </p>
+      </div>
+      <aside>
+        <h4>Tools</h4>
+        <ul class="tag-list">
+          <li>C++</li>
+          <li>C#</li>
+          <li>Unity</li>
+          <li>Python</li>
+          <li>Git</li>
+          <li>Android</li>
+          <li>Godot</li>
+        </ul>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><a href="mailto:callinnes@proton.me">callinnes@proton.me</a></li>
+          <li><a href="https://github.com/Laffey16" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/callum-innes16/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Callum Innes · Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+
+</html>

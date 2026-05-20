@@ -4,7 +4,7 @@ My personal portfolio site, showcasing games and software development projects.
 
 ## About
 
-I'm Callum — a developer based in Scotland working on games and software.
+I'm Callum, a developer based in Scotland working on games and software.
 This repo hosts the source for my portfolio site. The site itself covers:
 
 - **Game Development** — Unity projects, multiplayer systems, gameplay programming
