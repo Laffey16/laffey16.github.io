@@ -4,211 +4,375 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Callum Innes — Software &amp; Games Developer</title>
-  <meta name="description" content="Portfolio of Callum Innes — games and software development projects." />
+
+  <title>Callum Innes — Games &amp; Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Callum Innes, a games and software engineer from Scotland. Unity, C++, emulators, and gameplay systems." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Callum Innes — Games & Software Developer" />
+  <meta property="og:description"
+    content="Portfolio of Callum Innes — Unity games, a CHIP-8 emulator, and gameplay systems from Scotland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://callum-innes.com/" />
+  <meta property="og:site_name" content="Callum Innes" />
+  <meta property="og:image" content="https://callum-innes.com/assets/OG Image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Callum Innes — portfolio of games and software projects" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Callum Innes — Games & Software Developer" />
+  <meta name="twitter:description"
+    content="Portfolio of Callum Innes — Unity games, a CHIP-8 emulator, and gameplay systems from Scotland." />
+  <meta name="twitter:image" content="https://callum-innes.com/assets/OG Image.jpg" />
+  <meta name="twitter:image:alt" content="Callum Innes — portfolio of games and software projects" />
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2214%22>CI</text></svg>">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="grain"></div>
 
+  <!-- ============ HEADER ============ -->
+
   <header class="site-header">
-    <a href="#" class="logo">CI<span class="logo-dot">.</span></a>
+    <a href="#top" class="logo">CI<span class="logo-dot">.</span></a>
     <nav>
+
       <a href="#games">Games</a>
       <a href="#software">Software</a>
       <a href="#about">About</a>
       <a href="https://github.com/Laffey16" target="_blank" rel="noopener">GitHub ↗</a>
     </nav>
   </header>
-
-  <section class="hero">
-    <p class="kicker">Portfolio · 2026</p>
-    <h1>
-      Callum Innes.<br />
-      <span class="hero-accent">Building games &amp; software</span><br />
-      <span class="hero-muted">from Scotland.</span>
-    </h1>
-    <p class="hero-sub">
-      I make things in Unity, C++, C#, and whatever else the problem calls for.
-      Currently looking for graduate roles in games or software engineering.
-    </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#games">See the work</a>
-      <a class="btn btn-ghost" href="mailto:callinnes@proton.me">Get in touch</a>
-    </div>
-  </section>
-
-  <!-- ============ GAMES ============ -->
-  <section id="games" class="section">
-    <header class="section-header">
-      <span class="section-num">01</span>
-      <h2>Game Development</h2>
-      <p>University and personal projects across Unity, multiplayer systems, and gameplay programming.</p>
-    </header>
-
-    <div class="project-grid">
-
-      <article class="project featured">
-        <div class="project-media">
-
-          <img src="assets/placeholder-game1.png" alt="Screenshot of [Game Name]" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">Unity · C# · Multiplayer</p>
-          <h3>N/A</h3>
-          <p>N/A</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-            <a href="#" target="_blank" rel="noopener">Play / Demo →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/placeholder-game2.png" alt="Screenshot of Pokemon-style project" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">Unity · C#</p>
-          <h3>Pokémon-style RPG</h3>
-          <p>"Recreation of Pokémon-style gameplay in Unity to learn turn-based combat systems, tile-based movement, and
-            state machines.
-            Uses original Pokémon Platinum assets — built as a learning exercise, not for distribution."</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/placeholder-game3.png" alt="Screenshot of Unity .Net Sockets Implementation" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">Unity · 3D · Networking</p>
-          <h3>[Unity .NET Sockets Implementation]</h3>
-          <p>Implementation of a client-server networking game using Unity and .NET Sockets to create a multiplayer game
-            when clients go around collecting coins and this data is sent to a central server.
-            Working off of a custom-built C# server, this project taught me about low-level networking concepts like TCP
-            and UDP,
-            serialization, and latency compensation.
-          </p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ============ SOFTWARE ============ -->
-  <section id="software" class="section section-alt">
-    <header class="section-header">
-      <span class="section-num">02</span>
-      <h2>Software Development</h2>
-      <p>Non-games projects — emulators, bots, mobile apps, systems.</p>
-    </header>
-
-    <div class="project-grid">
-
-      <article class="project featured">
-        <div class="project-media">
-          <img src="assets/placeholder-chip8.png" alt="CHIP-8 emulator running Tetris" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">C++ · Emulation · Systems</p>
-          <h3>CHIP-8 Emulator</h3>
-          <p>A working CHIP-8 emulator written from scratch in C++. Implements the full opcode set, display, input, and
-            timers.</p>
-          <p>Writing this taught me how CPUs actually fetch-decode-execute instructions, how memory maps work, and how
-            to debug at the opcode level.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/placeholder-bot.png" alt="Discord anime bot screenshot" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">Python · Discord API</p>
-          <h3>Discord Anime Bot</h3>
-          <p>Short description.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/placeholder-anime-app.png" alt="Anime app screenshot" />
-        </div>
-        <div class="project-body">
-          <p class="project-tags">Android · Kotlin / Java</p>
-          <h3>Anime App</h3>
-          <p>Short description.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section about">
-    <header class="section-header">
-      <span class="section-num">03</span>
-      <h2>About</h2>
-    </header>
-    <div class="about-grid">
-      <div>
-        <p>
-          I'm a Games Application Developer graduate from Abertay based in Scotland, focused on
-          games programming and software engineering. I like low-level work — emulators,
-          engines, tools — and gameplay systems.
-        </p>
-        <p>
-          Outside of programming, 2D platformers (Hollow Knight is a forever favourite), anime, and manga are all things
-          I love.
-          A lot of my side projects end up at the intersection of those interests.
-        </p>
+  <main>
+    <section class="hero">
+      <p class="kicker">Portfolio · <span class="year">2026</span></p>
+      <h1>
+        Callum Innes.<br />
+        <span class="hero-accent">Building games and software from Scotland.</span><br />
+      </h1>
+      <p class="hero-sub">
+        Abertay graduate looking for roles in games or software engineering. I build things in Unity, C++, C#,
+        Python and whatever else the project needs.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#games">See the work</a>
+        <a class="btn btn-ghost" href="mailto:callinnes@proton.me">Get in touch</a>
       </div>
-      <aside>
-        <h4>Tools</h4>
-        <ul class="tag-list">
-          <li>C++</li>
-          <li>C#</li>
-          <li>Unity</li>
-          <li>Python</li>
-          <li>Git</li>
-          <li>Android</li>
-          <li>Godot</li>
-        </ul>
-        <h4>Contact</h4>
-        <ul class="contact-list">
-          <li><a href="mailto:callinnes@proton.me">callinnes@proton.me</a></li>
-          <li><a href="https://github.com/Laffey16" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/callum-innes16/" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
-      </aside>
-    </div>
-  </section>
+    </section>
 
+    <!-- ============ GAMES ============ -->
+    <section id="games" class="section">
+      <header class="section-header">
+        <span class="section-num">01</span>
+        <h2>Game Development</h2>
+        <p>University and personal projects across Unity, multiplayer systems, and gameplay programming.</p>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="project featured">
+          <div class="project-media project-media-stack">
+            <img src="https://img.itch.zone/aW1hZ2UvMTkzOTU0Ni8xMjE4MjU4Ny5qcGc=/original/t85hEK.jpg"
+              alt=" A Leap Through Time — interior of the library at golden hour" />
+            <video autoplay muted loop playsinline preload="metadata" loading="lazy">
+              <source src="assets/A Leap Through Time.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Team Project · Unity · C# · Git </p>
+            <h3>A Leap Through Time</h3>
+            <p>A 3D exploration game built for the National Library of Scotland as part of an 8-person team
+              (Duccrocks)
+              at
+              Abertay University.
+              Players move between time periods, with the library acting as a central hub. <br>Built for the Abertay
+              Professional Project Showcase 2023.<br>
+            </p>
+            <p>My role: Systems / Mechanics / UI Programmer </p>
+            <ul>
+              <li>Systems Programming (primary focus) <br> Built core gameplay systems such as player movement, level
+                manager, interactables and audio managers.</li>
+              <li>Implemented mechanics such as sprinting,</li>
+              <li>Worked with the UI designer to implement their designs such as menus and the HUD.</li>
+              <li>Git workflow lead: Set up our branching strategy and led the team on Git practices.</li>
+            </ul>
+            <p>
+              With eight people new to collaborative version control, this meant defining workflows, helping with
+              merge
+              conflicts, and reviewing PRs.
+              This was where I learned the most about working in a real team.
+            </p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=hbGm8JFURTk" target="_blank" rel="noopener">Trailer →</a>
+              <a href="https://www.youtube.com/watch?v=dAN7mezrFgU" target="_blank" rel="noopener">Gameplay →</a>
+              <a href="https://duccrocks.itch.io/a-leap-through-time" target="_blank" rel="noopener">Play / Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-media">
+            <div class="yt-wrapper">
+              <iframe src="https://www.youtube.com/embed/3qXYYcKM34I?si=6cpR9PuhrZWAcaRR" title="YouTube video player"
+                poster="assets/OG Image.jpg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">C# · Unity · LLMs · APIs </p>
+            <h3>Honours Project</h3>
+            <p>My final year project for Abertay asked: can large language models generate enjoyable narrative content
+              in
+              games compared to content written by a human?
+              Built in Unity and C#, the project wraps OpenAI's GPT-3.5 to let players talk to a cast of NPCs around a
+              lake (each with their own prompt and personality) gathering clues to reach the ending.
+            </p>
+            <p>
+              Whisper handles
+              speech recognition, and Azure TTS handles the voice replies.
+              It was a great hands-on intro to working with LLMs, prompt engineering, and integrating external APIs
+              into
+              Unity, and watching how people actually interact with AI-generated content.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/CMP400" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/Pokemon 1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Unity · C# · State Machines</p>
+            <h3>Pokémon-style RPG</h3>
+            <p>Recreation of Pokémon Platinum styled gameplay in Unity to learn turn-based combat systems, tile-based
+              movement, and
+              state machines.
+            </p>
+            <p>
+              Uses original Pokémon Platinum assets — built as a learning exercise, not for distribution.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/UnityPokemon" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/chip8-poster.png">
+              <source src="assets/303 Coursework Video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Unity · 3D · Networking</p>
+            <h3>Networked Coin Collector using .NET Sockets</h3>
+            <p>Implementation of a client-server networking game using Unity and .NET Sockets to create a multiplayer
+              game
+              when clients go around collecting coins and this data is sent to a central server.
+            </p>
+            <p>
+              Working off of a custom-built C# server, this project taught me about low-level networking concepts like
+              TCP
+              and UDP,
+              serialization, and latency compensation.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/303-Coursework" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <div class="yt-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/Df_t-19zY9o?si=XoryJpGKRGlMNlOR"
+                title="Machine Learning Flappy Bird demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                referrerpolicy="strict-origin-when-cross-origin" loading="lazy">
+              </iframe>
+
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Unity · 3D · Machine Learning</p>
+
+            <h3>Machine Learning Flappy Bird</h3>
+            <p>
+              This project made use of Unity ML-Agents in conjunction with Pytorch to build a model that is optimised
+              at
+              playing Flappy Bird.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/CMP304" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SOFTWARE ============ -->
+    <section id="software" class="section section-alt">
+      <header class="section-header">
+        <span class="section-num">02</span>
+        <h2>Software Development</h2>
+        <p>Non-games projects — emulators, bots, mobile apps, systems.</p>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="project featured">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/Chip 8 Emulator.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-body">
+            <p class="project-tags">C++ · Emulation · Systems</p>
+            <h3>CHIP-8 Emulator</h3>
+            <p>A working CHIP-8 emulator written from scratch in C++. Implements the full opcode set, display, input,
+              and
+              timers.</p>
+            <p>Writing this taught me how CPUs actually fetch-decode-execute instructions, how memory maps work, and how
+              to debug at the opcode level.</p>
+            <p>Built as a learning exercise and a first step towards a Game Boy emulator.</p>
+            <div class="project-links">
+              <a href="#top" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="project project">
+          <div class="project-media">
+            <img src="" loading="lazy"
+              alt="Android Booru app — list view showing fetched anime images with save and refresh controls">
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Android · Kotlin · REST APIs</p>
+            <h3>Android Booru Anime App</h3>
+            <p>Since I learned a lot about REST APIs and working with external data through the Discord bot
+              I built an Android app for browsing and searching anime images from Booru sites with the
+              ability
+              to save it to your phone, or reload and see the next one in the queue.</p>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/Anime-Image-App" target="_blank" rel="noopener">GitHub →</a>
+
+
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+
+          <div class="project-media">
+            <img src="assets/Discord Bot 2.jpg" alt="Discord bot with trivia functionality, multi choice."
+              loading="lazy" />
+          </div>
+          <div class="project-body">
+            <p class="project-tags">Python · Discord API</p>
+            <h3>Discord Anime Bot</h3>
+
+            <p>Started as as more a fun Discord bot in my college year's Discord server, later added to my university
+              server it grew as many different features were added.
+            </p>
+            <p>Made using Pycord and Discords official API interactions such as observation,slash commands and buttons
+              allowed me and friends to mess around with it. </p>
+
+            <br>Features Include: <br>
+            </p>
+            <ul>
+              <li>Using a GET Request with user input to fetch anime images from booru sites.</li>
+              <li>Trivia questions with multiple choice options through Discord buttons returning the right answer.</li>
+              <li>Simple fun commands such as getting the weather, rolling a dice, or getting cute animal pictures.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Laffey16/Anime-Image-App" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about">
+      <header class="section-header">
+        <span class="section-num">03</span>
+        <h2>About</h2>
+      </header>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a Games Application Developer graduate from Abertay based in Scotland, focused on
+            games programming and software engineering. I like low-level work — emulators,
+            engines, tools — and gameplay systems.
+          </p>
+          <p>
+            Outside of programming, 2D platformers (Hollow Knight is a forever favourite), anime, and manga are all
+            things
+            I love.
+            A lot of my side projects end up at the intersection of those interests.
+          </p>
+        </div>
+        <aside>
+          <h4>Tools</h4>
+          <ul class="tag-list">
+            <li>C++</li>
+            <li>C#</li>
+            <li>Unity</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>Android</li>
+            <li>Godot</li>
+          </ul>
+          <h4>Contact</h4>
+          <ul class="contact-list">
+            <li><a href="mailto:callinnes@proton.me">callinnes@proton.me</a></li>
+            <li><a href="https://github.com/Laffey16" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/callum-innes16/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+  </main>
   <footer class="site-footer">
-    <p>© 2026 Callum Innes · Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
+    <p>© <span class="year">2026</span> Callum Innes · Built with HTML &amp; CSS · <a
+        href="https://github.com/Laffey16/laffey16.github.io" target="_blank" rel="noopener">Hosted on GitHub Pages</a>
+    </p>
   </footer>
+
+  <!-- ============ Date Check ============ -->
+
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelectorAll('.year').forEach(el => el.textContent = year);
+  </script>
 
 </body>
 

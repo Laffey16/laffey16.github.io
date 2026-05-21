@@ -54,6 +54,12 @@ a:hover {
   color: var(--accent);
 }
 
+a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
@@ -146,7 +152,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border: 1px solid var(--border);
-  transition: all .2s ease;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
 }
 
 .btn-primary {
@@ -214,7 +220,7 @@ a:hover {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .project {
@@ -226,15 +232,23 @@ a:hover {
   transition: transform .25s ease, border-color .25s ease;
 }
 
-.project:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
+@media (hover: hover) {
+  .project:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
 }
 
 .project.featured {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
+}
+
+.project.featured .project-links {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 @media (max-width: 720px) {
@@ -256,6 +270,39 @@ a:hover {
   object-fit: cover;
   display: block;
   transition: transform .4s ease;
+}
+
+.project-media-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  /* tiny gap acts as a divider */
+}
+
+.project-media-split img {
+  aspect-ratio: 1 / 1;
+  /* or 4/5, etc — depends on your images */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-media-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  /* shows through as a thin divider line */
+  aspect-ratio: auto;
+  /* override the default 16/10 */
+}
+
+.project-media-stack img,
+.project-media-stack video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project:hover .project-media img,
@@ -292,9 +339,17 @@ a:hover {
   font-size: 0.92rem;
 }
 
+.project-body ul {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
 .project-links {
   margin-top: auto;
   padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  /* new */
   display: flex;
   gap: 1.25rem;
   font-size: 0.85rem;
@@ -304,11 +359,61 @@ a:hover {
   color: var(--accent);
 }
 
+
+.project.project-mobile {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  align-items: stretch;
+  grid-column: 1 / -1;
+}
+
+.project-mobile .project-media {
+  aspect-ratio: auto;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.project-mobile .project-media img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform .4s ease;
+}
+
+@media (max-width: 720px) {
+  .project.project-mobile {
+    grid-template-columns: 1fr;
+  }
+
+  .project-mobile .project-media {
+    aspect-ratio: auto;
+    max-height: none;
+    padding: 0;
+    display: block;
+    /* drop the centring grid — let the image dictate height */
+  }
+
+  .project-mobile .project-media img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+}
+
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
+}
+
+.about .section-header {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 720px) {
