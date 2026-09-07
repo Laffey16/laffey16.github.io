@@ -360,11 +360,12 @@ a:focus-visible,
 }
 
 
-.project.project-mobile {
+.project-mobile .project-media {
+  aspect-ratio: auto;
+  background: var(--bg);
   display: grid;
-  grid-template-columns: minmax(200px, 280px) 1fr;
-  align-items: stretch;
-  grid-column: 1 / -1;
+  place-items: center;
+  padding: 1.5rem;
 }
 
 .project-mobile .project-media {
@@ -383,6 +384,8 @@ a:focus-visible,
   object-fit: contain;
   transition: transform .4s ease;
 }
+
+
 
 @media (max-width: 720px) {
   .project.project-mobile {
